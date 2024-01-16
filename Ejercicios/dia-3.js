@@ -1,21 +1,21 @@
 // Ejercicio 12
 let frase1 = prompt("Ingrese una frase para que sea repetida 10 veces");
 for (let i = 0; i < 10; i++) {
-    console.log(frase);
+    console.log(frase1);
 }
 
 // Ejercicio 13
 
 let frase2 = prompt("Ingrese una frase que quiera repetir");
-let numeroRepe = prompt("Ingrese el numero de veces que quiere que se repita la frase",);
+let numeroRepe = parseInt(prompt("Ingrese el numero de veces que quiere que se repita la frase"));
 for (let i = 0; i < numeroRepe; i++) {
-    console.log(frase);
+    console.log(frase2);
 }
 
 //Ejercicio 14
-let numero1 = prompt("Ingrese un número para que se imprima desde el 1 hasta su número");
+let numero1 = parseInt(prompt("Ingrese un número para que se imprima desde el 1 hasta su número"));
     for (let i = 1; i <= numero1; i++) {
-        console.log(i);
+    console.log(i);
     }
 
 //Ejercicio 15
@@ -35,4 +35,18 @@ let palabraMagica = prompt('Ingrese "salir" para detener el programa, de lo cont
 console.log("El programa ha sido detenido");
 
 //Ejercicio 17
+const numeroRandom = Math.floor(Math.random() * 100) + 1;
 
+while (true) {
+  let numeroAdivina = prompt ("Adivina el número entre 1 y 100");
+  let numeroAdivinaEntero = parseInt(numeroAdivina);
+
+    if (numeroAdivinaEntero === numeroRandom) {
+    console.log("¡Felicitaciones! ¡Adivinaste el número!");
+    break;
+    } else {
+    console.log("Intenta de nuevo. No has adivinado el número.");
+    }
+  }
+
+  console.log("Gracias por jugar");

@@ -8,13 +8,13 @@ let saludo = "Hola, " + nombre + "!";
 console.log(saludo);
 
 //Ejercicio 3
-let a = prompt("Ingresa un número")
-let b = prompt("Ingresa otro número")
+let sumando1 = prompt("Ingresa un número")
+let sumando2 = prompt("Ingresa otro número")
 const suma = parseInt(a) + parseInt(b)
 console.log(suma);
 
 
-//Ejercicio 4
+//Ejercicio 4 
 let anyoNacimiento = prompt("Ingrese un año");
 let anyoNacimientoEntero = parseInt(anyoNacimiento);
 let anyoActual = new Date().getFullYear();

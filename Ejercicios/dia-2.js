@@ -1,10 +1,10 @@
 // Ejercicio 6
-let numero2 = prompt("Ingresa un número: ");
+let numero2 = parseInt(prompt("Ingresa un número: "));
 if (numero2 > 10) {
     console.log("El número es mayor que 10");
     }else if (numero2 <= 10) {
     console.log("El número es menor o igual a 10");
-        }
+    }
 
 // Ejercicio 7
 let numeroRandom = Math.floor(Math.random() * 10) + 1;
@@ -28,7 +28,7 @@ if (numero3 > 10) {
     } else if (numero3 < 10) {
         console.log("El número es menor a 10");
         } else {
-        console.log("El número es igual a 10"   );
+        console.log("El número es igual a 10");
         }   
 
 // Ejercicio 10
