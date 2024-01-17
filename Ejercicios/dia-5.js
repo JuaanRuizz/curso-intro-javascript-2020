@@ -46,3 +46,17 @@ const dividePhrase2 = phrase5.split(" ");
 for (const dividePhrase of dividePhrase2){
     console.log(dividePhrase); 
 }
+//Ejercicio 28 
+const phrase6 = prompt("Ingrese una frase");
+const phrase7 = prompt("Ingrese otra frase");
+let arrayCommon = [];
+for (const char of phrase6){
+    if (phrase7.includes(char) && !arrayCommon.includes(char)) {
+        arrayCommon.push(char);
+    }
+}
+if (arrayCommon.length > 0) {
+    console.log("Caracteres en común:", arrayCommon.join(", "));
+}else {
+    console.log("No se encontraron caracteres en común.");
+}
