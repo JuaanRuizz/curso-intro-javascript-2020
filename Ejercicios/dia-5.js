@@ -3,8 +3,16 @@ const phrase = prompt("Ingrese una phrase para que sea devuelta en mayuscula");
 console.log(phrase.toUpperCase());
 
 //Ejercicio 24
-const phrase2 = prompt("Ingrese una frase para que sea devuelta en mayuscula");
-console.log(`La phrase2 tiene ${phrase2.length} caracteres "a"`);
+const phrase2 = prompt("Ingrese una frase");
+let Acounter = 0;
+
+
+for (let i = 0; i < phrase2.length; i++) {
+    if (phrase2[i].toLowerCase() === "a") {
+        Acounter++;
+    }
+}
+console.log(`La frase tiene ${Acounter} caracteres "a"`);
 
 //Ejercicio 25
 const phrase3 = prompt("Ingrese una frase para que sea devuelta en mayuscula");
@@ -20,7 +28,7 @@ for (let i = 0; i < phrase3.length; i++) {
         break;
     case "i":
         modifiedPhrase += "1";
-    // eslint-disable-next-line no-fallthrough
+        break;
     case "o":
         modifiedPhrase += "0";
         break;

@@ -40,7 +40,7 @@ const mat = [
 for (let i = 0; i < mat.length; i++) {
     console.log(`Grupo ${i + 1}:`);
     for (let j = 0; j < mat[i].length; j++) {
-        console.log(`  ${mat[i][j]}`); //[i] Para que acceda a la fila de la matriz - [j] Accede a la columna de la matriz. Este me costó un montón porque nunca vi matrices :(
+        console.log(`  ${mat[i][j]}`); //[i] Para que acceda a la fila de la matriz - [j] Accede a la columna de la matriz. 
     }
 }
 
@@ -52,12 +52,32 @@ for (let i = 0; i < nums.length; i++){
     }
 }
 
+//Ejercicio 21 con filter
+const nums2 = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, 39];
+const numsMayoresDeDiez = nums2.filter((num) => num > 10);
+const nuevonums2 = numsMayoresDeDiez.map((num) => num * 2);
+console.log(nuevonums2);
+
 //Ejercicio 22
 const numbers = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1];
 let quantityof1 = 0;
 for (let i = 0; i < numbers.length; i++){
     if (numbers[i] === 1){
         quantityof1++;
+
+
     }
 }
 console.log(quantityof1);
+
+//Ejercicio 22 con reduce
+const numbers1 = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1];
+let quantityofOne = 0;
+const counter = numbers1.reduce((accumulator, currentValue) => {
+    return currentValue === 1 ? accumulator + 1 : accumulator;
+}, 0);
+
+
+console.log(counter);
+
+
