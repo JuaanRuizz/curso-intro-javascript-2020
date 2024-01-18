@@ -46,7 +46,7 @@ console.log(capitalizaedPhrase);
 //Ejercicio 34
 function average(arrayCounter){
     const additionArray = arrayCounter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    const averageR = additionArray / arrayCounter.lenght;
+    const averageR = additionArray / arrayCounter.length;
     return averageR;
 }
 const array = [1, 2, 3, 4];
