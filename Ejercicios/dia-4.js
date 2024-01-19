@@ -74,10 +74,14 @@ console.log(quantityof1);
 const numbers1 = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1];
 let quantityofOne = 0;
 const counter = numbers1.reduce((accumulator, currentValue) => {
-    return currentValue === 1 ? accumulator + 1 : accumulator;
+    if (currentValue === 1) {
+        return accumulator + 1;
+    } else {
+        return accumulator;
+    }
 }, 0);
 
-
+//Qué es una expresión ternaria.
 console.log(counter);
 
 

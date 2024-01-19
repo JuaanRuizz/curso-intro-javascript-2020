@@ -15,7 +15,7 @@ for (let i = 0; i < phrase2.length; i++) {
 console.log(`La frase tiene ${Acounter} caracteres "a"`);
 
 //Ejercicio 25
-const phrase3 = prompt("Ingrese una frase para que sea devuelta en mayuscula");
+const phrase3 = prompt("Ingrese una frase");
 let modifiedPhrase = "";
 for (let i = 0; i < phrase3.length; i++) {
     let lowerCase = phrase3[i].toLowerCase();
